@@ -1,0 +1,15 @@
+baseURL = "http://localhost/"
+languageCode = "zh-cn"
+title = "AI自动化工具分享"
+
+theme = "PaperMod"
+
+[params]
+defaultTheme = "auto"
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+
+[params.homeInfoParams]
+Title = "AI自动化工具分享"
+Content = "分享AI工具、自动化技术和效率提升方法"
