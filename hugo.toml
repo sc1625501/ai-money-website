@@ -1,8 +1,10 @@
-baseURL = "http://localhost/"
+baseURL = "https://sc1625501.github.io/"
 languageCode = "zh-cn"
 title = "AI自动化工具分享"
 
 theme = "PaperMod"
+
+publishDir = "docs"
 
 [params]
 defaultTheme = "auto"
