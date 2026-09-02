@@ -5,6 +5,7 @@ title = "AI自动化工具分享"
 theme = "PaperMod"
 
 publishDir = "docs"
+buildFuture = true
 
 [params]
 defaultTheme = "auto"
