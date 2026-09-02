@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>人工智能 on AI自动化工具分享</title>
+    <link>https://sc1625501.github.io/ai-money-website/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</link>
+    <description>Recent content in 人工智能 on AI自动化工具分享</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 02 Sep 2026 09:41:03 +0000</lastBuildDate>
+    <atom:link href="https://sc1625501.github.io/ai-money-website/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ollama本地AI部署教程：普通电脑运行自己的大语言模型</title>
+      <link>https://sc1625501.github.io/ai-money-website/posts/2026-09-02-ai-article/</link>
+      <pubDate>Wed, 02 Sep 2026 09:41:03 +0000</pubDate>
+      <guid>https://sc1625501.github.io/ai-money-website/posts/2026-09-02-ai-article/</guid>
+      <description>&lt;h1 id=&#34;ollama本地ai部署教程普通电脑运行自己的大语言模型&#34;&gt;Ollama本地AI部署教程：普通电脑运行自己的大语言模型&lt;/h1&gt;
+&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;
+&lt;p&gt;随着大语言模型的兴起，越来越多的人开始关注如何在本地部署这些模型，以便在不依赖云服务的情况下使用它们。Ollama是一个新兴的开源项目，旨在让普通用户也能轻松在本地部署大语言模型。本文将详细介绍如何使用Ollama在本地运行大语言模型，并探讨其优缺点以及与其他方案的比较。&lt;/p&gt;
+&lt;h2 id=&#34;什么是ollama&#34;&gt;什么是Ollama&lt;/h2&gt;
+&lt;p&gt;Ollama是一个开源项目，致力于提供简单易用的工具和资源，帮助用户在本地运行大语言模型。它不仅支持模型的部署，还提供了丰富的API接口，便于集成到各种应用中。Ollama的目标是降低大语言模型的技术门槛，使其更加普及。&lt;/p&gt;
+&lt;h2 id=&#34;核心功能介绍&#34;&gt;核心功能介绍&lt;/h2&gt;
+&lt;h3 id=&#34;1-支持多种模型&#34;&gt;1. 支持多种模型&lt;/h3&gt;
+&lt;p&gt;Ollama支持多种大语言模型，包括但不限于LLaMA、Alpaca等。用户可以根据自己的需求选择合适的模型。&lt;/p&gt;
+&lt;h3 id=&#34;2-一键部署&#34;&gt;2. 一键部署&lt;/h3&gt;
+&lt;p&gt;Ollama提供了一键部署功能，用户只需几行命令即可完成模型的部署。这对于技术门槛较高的大语言模型来说，无疑是一个巨大的福音。&lt;/p&gt;
+&lt;h3 id=&#34;3-易于集成&#34;&gt;3. 易于集成&lt;/h3&gt;
+&lt;p&gt;Ollama提供了丰富的API接口，支持多种编程语言，使得集成到现有应用变得非常简单。&lt;/p&gt;
+&lt;h2 id=&#34;实际使用方法&#34;&gt;实际使用方法&lt;/h2&gt;
+&lt;h3 id=&#34;1-安装ollama&#34;&gt;1. 安装Ollama&lt;/h3&gt;
+&lt;p&gt;首先，确保你的计算机满足基本的硬件要求，如足够的内存和显卡支持。接下来，可以通过以下命令安装Ollama：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install ollama
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2-下载模型&#34;&gt;2. 下载模型&lt;/h3&gt;
+&lt;p&gt;下载你需要的模型文件。Ollama提供了多种模型供用户选择，你可以根据自己的需求进行下载。&lt;/p&gt;
+&lt;h3 id=&#34;3-部署模型&#34;&gt;3. 部署模型&lt;/h3&gt;
+&lt;p&gt;使用Ollama提供的命令行工具进行模型部署：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ollama deploy --model &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;模型文件路径&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; --api
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;4-使用api&#34;&gt;4. 使用API&lt;/h3&gt;
+&lt;p&gt;部署完成后，你可以通过API接口与模型进行交互。Ollama提供了多种编程语言的API接口文档，帮助你快速集成模型到应用中。&lt;/p&gt;
+&lt;h2 id=&#34;应用案例&#34;&gt;应用案例&lt;/h2&gt;
+&lt;p&gt;Ollama在多个领域都有实际应用案例，如聊天机器人、智能客服等。例如，某企业使用Ollama部署了一个智能客服系统，通过集成大语言模型，大幅提高了客户服务的质量和效率。&lt;/p&gt;
+&lt;h2 id=&#34;优点分析&#34;&gt;优点分析&lt;/h2&gt;
+&lt;h3 id=&#34;1-降低技术门槛&#34;&gt;1. 降低技术门槛&lt;/h3&gt;
+&lt;p&gt;Ollama简化了大语言模型的部署过程，使得普通用户也能轻松上手。&lt;/p&gt;
+&lt;h3 id=&#34;2-高度可定制&#34;&gt;2. 高度可定制&lt;/h3&gt;
+&lt;p&gt;用户可以根据自己的需求选择不同的模型和配置，实现高度定制化的应用。&lt;/p&gt;
+&lt;h3 id=&#34;3-成本效益&#34;&gt;3. 成本效益&lt;/h3&gt;
+&lt;p&gt;相较于云服务，本地部署可以显著降低使用成本。&lt;/p&gt;
+&lt;h2 id=&#34;缺点和限制&#34;&gt;缺点和限制&lt;/h2&gt;
+&lt;h3 id=&#34;1-技术门槛&#34;&gt;1. 技术门槛&lt;/h3&gt;
+&lt;p&gt;虽然Ollama简化了部署过程，但对于完全不懂技术的用户来说，仍然有一定的学习成本。&lt;/p&gt;
+&lt;h3 id=&#34;2-性能限制&#34;&gt;2. 性能限制&lt;/h3&gt;
+&lt;p&gt;本地部署的性能受限于硬件配置，对于高性能需求的应用可能需要更强的硬件支持。&lt;/p&gt;
+&lt;h3 id=&#34;3-安全性&#34;&gt;3. 安全性&lt;/h3&gt;
+&lt;p&gt;本地部署存在一定的安全风险，需要用户注意数据保护和隐私安全。&lt;/p&gt;
+&lt;h2 id=&#34;与其他方案比较&#34;&gt;与其他方案比较&lt;/h2&gt;
+&lt;h3 id=&#34;1-与云服务对比&#34;&gt;1. 与云服务对比&lt;/h3&gt;
+&lt;p&gt;与云服务相比，Ollama的优势在于成本效益和隐私保护，但可能在性能和扩展性方面略逊一筹。&lt;/p&gt;
+&lt;h3 id=&#34;2-与其他本地部署方案对比&#34;&gt;2. 与其他本地部署方案对比&lt;/h3&gt;
+&lt;p&gt;与其他本地部署方案相比，Ollama提供了更加友好的用户界面和API接口，使得集成更加简便。&lt;/p&gt;
+&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
+&lt;p&gt;Ollama是一个非常有潜力的本地大语言模型部署方案，它不仅降低了技术门槛，还提供了丰富的功能和接口。虽然在某些方面还存在不足，但其在普及大语言模型技术方面的贡献不容忽视。对于希望在本地运行大语言模型的用户来说，Ollama无疑是一个值得尝试的选择。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
